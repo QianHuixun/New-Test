@@ -6,9 +6,9 @@ language:
 task_categories:
   - robotics
 tags:
-  - RoboCoin
+  - RoboCOIN
   - LeRobot
-size_categories: 1K-10K
+frame_range: 1K-10K
 configs:
 - config_name: default
   data_files: data/*/*.parquet
@@ -18,10 +18,24 @@ configs:
 
 ## 📋 Overview
 
-This dataset uses an extended format based on [LeRobot](https://github.com/huggingface/lerobot) and is fully compatible with LeRobot.
+This dataset uses an extended format based on LeRobot and is fully compatible with LeRobot.
 
-**Robot Type:** `None`
+**Robot Type:** `G1edu-u3`
  | **Codebase Version:** `v2.1`
+**End-Effector Type:** `three_finger_hand`
+
+## 🏠 Scene Types
+
+This dataset covers the following scene types:
+- `home`
+
+
+## 🤖 Atomic Actions
+
+This dataset includes the following atomic actions:
+- `pick`
+- `place`
+
 
 ## 📊 Dataset Statistics
 
@@ -34,27 +48,28 @@ This dataset uses an extended format based on [LeRobot](https://github.com/huggi
 | **Total Chunks** | 1 |
 | **Chunk Size** | 39 |
 | **FPS** | 30 |
+| **Dataset Size** | 116.0MB |
 
 
 ## 👥 Authors
 
 ### Contributors
 This dataset is contributed by:
-- @BAAI-RoboCOIN Team
-- @Beijing Academy of Artificial Intelligence
+- [RoboCOIN](https://flagopen.github.io/RoboCOIN/) - RoboCOIN Team
 
 
 ## 🔗 Links
 
-- **🏠 Homepage:** [https://RoboCoin.github.io/](https://RoboCoin.github.io/)
-- **📄 Paper:** [in comming](in comming)
-- **💻 Repository:** [https://github.com/RoboCoin/robocoin-dataset](https://github.com/RoboCoin/robocoin-dataset)
-- **🌐 Project Page:** [https://RoboCoin.github.io/](https://RoboCoin.github.io/)
+- **🏠 Homepage:** [https://flagopen.github.io/RoboCOIN/](https://flagopen.github.io/RoboCOIN/)
+- **📄 Paper:** [https://arxiv.org/abs/2511.17441](https://arxiv.org/abs/2511.17441)
+- **💻 Repository:** [https://github.com/FlagOpen/RoboCOIN](https://github.com/FlagOpen/RoboCOIN)
+- **🌐 Project Page:** [https://flagopen.github.io/RoboCOIN/](https://flagopen.github.io/RoboCOIN/)
+- **🐛 Issues:** [https://github.com/FlagOpen/RoboCOIN/issues](https://github.com/FlagOpen/RoboCOIN/issues)
 - **📜 License:** apache-2.0
 
 ## 🏷️ Dataset Tags
 
-- `RoboCoin`
+- `RoboCOIN`
 - `LeRobot`
 
 
@@ -82,11 +97,9 @@ This dataset includes 4 distinct subtasks:
 4. **Place the plastic bowl on the table with right gripper** 
 
 
-
-
 ## 🎥 Camera Views
 
-This dataset includes 14 camera views.
+This dataset includes 1 camera views.
 
 ## 🏷️ Available Annotations
 
@@ -230,7 +243,13 @@ G1edu-u3_place_plastic_bowl_ag_qced_hardlink/
 ```
 
 
+## 📞 Contact and Support
 
+For questions, issues, or feedback regarding this dataset, please contact:
+- **Email:** None
+For questions, issues, or feedback regarding this dataset, please contact us.
+### Support
+For technical support, please open an issue on our GitHub repository.
 
 ## 📄 License
 
@@ -239,8 +258,24 @@ This dataset is released under the **apache-2.0** license.
 Please refer to the LICENSE file for full license terms and conditions.
 
 
+## 📚 Citation
 
+If you use this dataset in your research, please cite:
 
+```bibtex
+@article{robocoin,
+    title={RoboCOIN: An Open-Sourced Bimanual Robotic Data Collection for Integrated Manipulation},
+    author={Shihan Wu, Xuecheng Liu, Shaoxuan Xie, Pengwei Wang, Xinghang Li, Bowen Yang, Zhe Li, Kai Zhu, Hongyu Wu, Yiheng Liu, Zhaoye Long, Yue Wang, Chong Liu, Dihan Wang, Ziqiang Ni, Xiang Yang, You Liu, Ruoxuan Feng, Runtian Xu, Lei Zhang, Denghang Huang, Chenghao Jin, Anlan Yin, Xinlong Wang, Zhenguo Sun, Junkai Zhao, Mengfei Du, Mingyu Cao, Xiansheng Chen, Hongyang Cheng, Xiaojie Zhang, Yankai Fu, Ning Chen, Cheng Chi, Sixiang Chen, Huaihai Lyu, Xiaoshuai Hao, Yequan Wang, Bo Lei, Dong Liu, Xi Yang, Yance Jiao, Tengfei Pan, Yunyan Zhang, Songjing Wang, Ziqian Zhang, Xu Liu, Ji Zhang, Caowei Meng, Zhizheng Zhang, Jiyang Gao, Song Wang, Xiaokun Leng, Zhiqiang Xie, Zhenzhen Zhou, Peng Huang, Wu Yang, Yandong Guo, Yichao Zhu, Suibing Zheng, Hao Cheng, Xinmin Ding, Yang Yue, Huanqian Wang, Chi Chen, Jingrui Pang, YuXi Qian, Haoran Geng, Lianli Gao, Haiyuan Li, Bin Fang, Gao Huang, Yaodong Yang, Hao Dong, He Wang, Hang Zhao, Yadong Mu, Di Hu, Hao Zhao, Tiejun Huang, Shanghang Zhang, Yonghua Lin, Zhongyuan Wang and Guocai Yao},
+    journal={arXiv preprint arXiv:2511.17441},
+    url = {https://arxiv.org/abs/2511.17441},
+    year={2025}
+    }
+```
+
+### Additional References
+
+If you use this dataset, please also consider citing:
+- LeRobot Framework: https://github.com/huggingface/lerobot
 
 ## 📌 Version Information
 

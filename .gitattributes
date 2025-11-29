@@ -173,3 +173,5 @@ videos/chunk-000/observation.images.ego_view/episode_000033.mp4 filter=lfs diff=
 videos/chunk-000/observation.images.ego_view/episode_000031.mp4 filter=lfs diff=lfs merge=lfs -text
 data/chunk-000/episode_000013.parquet filter=lfs diff=lfs merge=lfs -text
 videos/chunk-000/observation.images.ego_view/episode_000027.mp4 filter=lfs diff=lfs merge=lfs -text
+
+data/chunk-000/episode_000020.parquet filter=lfs diff=lfs merge=lfs -text
